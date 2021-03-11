@@ -203,14 +203,3 @@ app = web.Application([
     (r"/translate", AudioWebSocket),
 ])
 
-if __name__ == "__main__":
-  # ssl_options = {
-  #     "certfile":  "tls/server.cert",
-  #     "keyfile": "tls/server.key",
-  # }
-  
-  nest_asyncio.apply()
-  server = httpserver.HTTPServer(
-      app, xheaders=True)
-  server.listen(8002, address='127.0.0.1')
-  #ioloop.IOLoop.current().start()
