@@ -3,6 +3,10 @@ env: flex
 
 runtime_config:
     python_version: 3
-    
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 8
+  
 entrypoint: gunicorn -b :$PORT -k tornado main:app
 
