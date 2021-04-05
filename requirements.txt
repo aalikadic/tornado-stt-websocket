@@ -1,4 +1,5 @@
 google-cloud-speech==0.27.1
 google-cloud-logging==1.1.0
 gunicorn==20.0.4
+nest-asyncio==1.4.1
 tornado==4.5.1
